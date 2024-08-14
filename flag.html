@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        .box{
+            transform-style: preserve-3d;
+            animation: animate 20s linear infinite;
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        @keyframes animate {
+        0%{
+             transform: perspective(1000px) rotateY(0deg);
+            }
+        100%{
+             transform: perspective(1000px) rotateY(360deg);
+         }
+
+        }
+        .box span{
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i) * 36deg)) translateZ(450px);
+            -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
+        }
+
+    </style>
+    <title>Freedom Fighters</title>
+</head>
+<body class="p-0 m-0 box-border flex justify-center items-center min-h-screen bg-gradient-to-r from-orange-500  to-green-500 h-screen ">
+    <h1 class="top-4 text-5xl absolute  bg-gradient-to-r from-orange-600 to-green-600 text-yellow-50  ">Freedom Fighters</h1>
+    <img class="absolute top-0 left-0  w-[150px] h-[150px] duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="assets/butterfly.gif">
+    <img class="absolute top-0 right-0  w-[150px] h-[150px] duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="assets/butterfly.gif">
+    
+    <div class="absolute top-20 flex ">
+        <div class="">
+            <p class="w-1 h-[15rem]  bg-white border "></p>
+            <p class="w-[2rem] h-4 bg-black left-[-0.7rem]  bottom-4 absolute"></p>
+            <p class="w-[3rem] h-4 bg-black bottom-2 left-[-1.1rem] absolute "></p>
+            <p class="w-[4rem] h-4 bg-black bottom-0 left-[-1.6rem] absolute"></p>
+        </div>
+        <div class="w-32 absolute left-[-0.7rem]">
+            <p><img class="absolute " src="assets/flag.gif" alt=""></p>
+        </div>
+    </div>
+    <div class="box relative w-[100px] h-[100px] ">
+        
+        <span style="--i:1" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/bhagt singh.jpg"></span>
+        <span style="--i:2" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/chandra shekar.jpg"></span>
+        <span style="--i:3" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/j.nehru.jpeg"></span>
+        <span style="--i:4" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/l.bs.jpg"></span>
+        <span style="--i:5" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/mahatma gandhi.jpeg"></span>
+        <span style="--i:6" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/nana sahab.jpeg"></span>
+        <span style="--i:7" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/pandey ji.jpeg"></span>
+        <span style="--i:8" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/r.p.b.webp"></span>
+        <span style="--i:9" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/Rani_of_jhansi.jpg"></span>
+        <span style="--i:10" class="absolute top-0 left-0 w-full h-full origin-center"><img class="absolute top-0 left-0  w-full h-full duration-75 rounded-2xlborder-double-black transition-transform  ease-in-out" src="/assets/s.v.p.jpg"></span>
+    </div>
+<div class="absolute bottom-4 border border-black p-2">
+    <p>On this Independence Day, we remember and thank the heroes who fought for our freedom.</p>
+    <p>Let’s honor the brave people who helped us gain independence. Their courage gave us our freedom.</p>
+    <p>Today we celebrate our freedom and remember the fighters who made it possible. Their bravery is our strength.</p>
+    <p>As we enjoy our freedom, let’s think of the people who fought hard to give us this day. They are our true heroes</p>
+    <p>Independence Day is a time to remember and thank those who fought for our country’s freedom. Their spirit inspires us every day.</p>
+</div>
+<audio class="bottom-0 right-0 absolute" controls autoplay loop>
+    <source src="assets/128-Desh Mere - Bhuj The Pride Of India 128 Kbps.mp3"  type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+    
+</body>
+</html>
